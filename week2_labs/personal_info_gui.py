@@ -19,7 +19,7 @@ def main(page: ft.Page):
         size=28,
         weight=ft.FontWeight.BOLD,
         text_align=ft.TextAlign.CENTER,
-        color=ft.Colors.INDIGO_700
+        color=ft.Colors.PRIMARY
     )
     
     # Input fields
@@ -68,7 +68,7 @@ def main(page: ft.Page):
     # Output container
     output_container = ft.Container(
         content=ft.Text("Fill out the form and click 'Generate Profile' to see your information."),
-        bgcolor=ft.Colors.GREY_100,
+        bgcolor=ft.Colors.SURFACE, # Adapts to system theme
         padding=15,
         border_radius=10,
         width=550
@@ -131,7 +131,7 @@ def main(page: ft.Page):
             content=ft.Text(message),
             actions=[ft.TextButton("OK", on_click=lambda e: close_error_dialog(error_dialog))]
         )
-        page.dialog = error_dialog
+        page.overlay.append(error_dialog) # Show dialog when error occurs
         error_dialog.open = True
         page.update()
     
@@ -143,16 +143,16 @@ def main(page: ft.Page):
     generate_btn = ft.ElevatedButton(
         "Generate Profile",
         on_click=generate_profile,
-        bgcolor=ft.Colors.INDIGO_600,
-        color=ft.Colors.WHITE,
+        bgcolor=ft.Colors.PRIMARY,
+        color=ft.Colors.ON_PRIMARY,
         width=150
     )
     
     clear_btn = ft.ElevatedButton(
         "Clear Form",
         on_click=clear_form,
-        bgcolor=ft.Colors.RED_600,
-        color=ft.Colors.WHITE,
+        bgcolor=ft.Colors.ERROR,
+        color=ft.Colors.ON_ERROR,
         width=150
     )
     

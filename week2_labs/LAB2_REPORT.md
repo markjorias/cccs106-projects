@@ -2,14 +2,14 @@
 **Student Name:** Mark Joseph Orias
 <br>**Student ID:** 231002285
 <br>**Section:** BSCS3A
-<br>**Date:** Monday, September 1, 2025
+<br>**Date:** Wednesday, September 3, 2025
 
 ## Git Configuration
 
 ### Repository Setup
 - **GitHub Repository:** https://github.com/markjorias/cccs106-projects
 - **Local Repository:** ✅ Initialized and connected
-- **Commit History:** A total of 5 commits
+- **Commit History:** A total of **6 commits** including the latest
 
 ### Git Skills Demonstrated
 - ✅ Repository initialization and configuration
@@ -98,15 +98,17 @@ Although some Git commands can be confusing, I can see how version control is vi
 ## Screenshots
 
 ### Git Repository
-[ ] GitHub repository with commit history
-[ ] Local git log showing commits
+**GitHub repository with commit history**
+![Github Repository Commit History](/week2_labs/lab2_screenshots/github_commit_history.png)
+**Local git log showing commits**
+![Local Git Commits](/week2_labs/lab2_screenshots/local_git_commits.png)
 
 ### GUI Applications
-hello_flet.py running with all features
-![Hello Flet Output](/cccs106-projects/week2_labs/lab2_screenshots/hello_flet_output.png)
+**hello_flet.py running with all features**
+![Hello Flet Output](/week2_labs/lab2_screenshots/hello_flet_output.png)
 
-personal_info_gui.py with filled form and generated profile
-![Personal Info GUI Output](/cccs106-projects/week2_labs/lab2_screenshots/personal_info_gui_output.png) 
+**personal_info_gui.py with filled form and generated profile**
+![Personal Info GUI Output](/week2_labs/lab2_screenshots/personal_info_gui_output.png) 
 
 
 ## Future Enhancements

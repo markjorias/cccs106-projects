@@ -10,7 +10,6 @@ def main(page: ft.Page):
     page.window.frameless = True
     page.window.height = 350
     page.window.width = 400
-    page.padding = ft.Padding(50, 35, 50, 20)
     
     # Page Layout Configuration
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
@@ -171,16 +170,17 @@ def main(page: ft.Page):
                 ),
                 
                 ft.Container(
-                    content = ft.Column([username_field, password_field], spacing=20,)
+                    content = ft.Column([username_field, password_field], spacing=20),
+                    alignment=ft.alignment.center
                 ),
                 
                 ft.Container(
                     content = login_button,
                     alignment=ft.alignment.bottom_right,
-                    margin=ft.Margin(0,20,0,10),
+                    margin=ft.Margin(0,20,40,0),
                 )
             ]
         )
     )
 
-ft.app(main)
+ft.app(target=main)

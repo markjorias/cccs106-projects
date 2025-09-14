@@ -6,7 +6,7 @@ def connect_db():
         connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="admin123",
+            password="", # IMPORTANT: Replace with your MySQL root password
             database="fletapp"
         )
 

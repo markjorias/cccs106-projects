@@ -16,15 +16,20 @@ class Config:
         "OPENWEATHER_BASE_URL", 
         "https://api.openweathermap.org/data/2.5/weather"
     )
+    FORECAST_URL = os.getenv(
+        "OPENWEATHER_FORECAST_URL", 
+        "https://api.openweathermap.org/data/2.5/forecast"
+    )
     
     # App Configuration
     APP_TITLE = "Weather App"
-    APP_WIDTH = 400
-    APP_HEIGHT = 600
+    APP_WIDTH = 430
+    APP_HEIGHT = 932
     
     # API Settings
     UNITS = "metric"  # metric, imperial, or standard
     TIMEOUT = 10  # seconds
+    IP_API_URL = "https://ipapi.co/json/"
     
     @classmethod
     def validate(cls):
